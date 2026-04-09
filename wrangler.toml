@@ -1,8 +1,4 @@
 name = "nxcut-docs"
-main = ".open-next/worker.js"
 compatibility_date = "2024-12-30"
-compatibility_flags = ["nodejs_compat", "global_fetch_strictly_public"]
-
-[assets]
-directory = ".open-next/assets"
-binding = "ASSETS"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = "out"
