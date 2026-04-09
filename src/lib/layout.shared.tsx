@@ -6,6 +6,7 @@ export function baseOptions(): BaseLayoutProps {
     nav: {
       // JSX supported
       title: appName,
+      url:'https://nxcut.com/'
     },
     // githubUrl: `https://github.com/${gitConfig.user}/${gitConfig.repo}`,
   };
