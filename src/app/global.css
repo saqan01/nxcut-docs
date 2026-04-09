@@ -2,6 +2,25 @@
 @import 'fumadocs-ui/css/neutral.css';
 @import 'fumadocs-ui/css/preset.css';
 
+@theme {
+  --color-primary: oklch(0.623 0.214 259.8);
+  --color-primary-foreground: oklch(1 0 0);
+}
+
+:root {
+  --primary: 217 91% 60%;
+  --primary-foreground: 0 0% 100%;
+  --accent: 217 91% 95%;
+  --accent-foreground: 217 91% 40%;
+}
+
+.dark {
+  --primary: 217 91% 65%;
+  --primary-foreground: 0 0% 100%;
+  --accent: 217 91% 15%;
+  --accent-foreground: 217 91% 80%;
+}
+
 html {
   scrollbar-gutter: stable;
 }
@@ -9,4 +28,34 @@ html {
 html > body[data-scroll-locked] {
   margin-right: 0px !important;
   --removed-body-scroll-bar-size: 0px !important;
+}
+
+/* Documentation Accents */
+.prose blockquote {
+  border-left-color: hsl(var(--primary)) !important;
+  background-color: hsla(var(--primary), 0.05);
+  padding: 1rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.prose hr {
+  border-color: hsla(var(--primary), 0.2);
+}
+
+.prose :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+  color: hsl(var(--primary));
+  background-color: hsla(var(--primary), 0.1);
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+}
+
+.prose h2 {
+  position: relative;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid hsla(var(--primary), 0.1);
+}
+
+.bg-fd-primary{
+  background-color: hsl(var(--primary));
 }

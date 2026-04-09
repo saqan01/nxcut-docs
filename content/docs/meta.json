@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "index",
+    "dashboard",
+    "calendar",
+    "checkout",
+    "sales",
+    "catalog",
+    "clients",
+    "team",
+    "commission",
+    "reporting",
+    "settings",
+    "website"
+  ]
+}

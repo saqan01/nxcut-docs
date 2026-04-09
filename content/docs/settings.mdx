@@ -1,0 +1,135 @@
+---
+title: Settings
+description: Configure your branches, business hours, payment methods, and permissions
+---
+
+Settings is where you control the core configuration of your salon. Click **Settings** in the left menu to get started. There are four sections: **Branches**, **Calendar**, **Payment Methods**, and **Permissions**.
+
+<Callout type="info">
+Settings is only accessible to admin users.
+</Callout>
+
+---
+
+## Branches
+
+**Settings → Branches**
+
+The Branches page shows all your salon locations. Each branch is displayed as a card showing:
+
+- Branch photo
+- Branch name and **Active** status badge
+- Location ID
+- Number of staff assigned
+- Contact email and phone
+- City and country
+- TRN (Tax Registration Number)
+- Date the branch was created
+- A **pencil icon** to edit the branch
+
+### Editing a branch
+
+Click the **pencil icon** on any branch card to open the Edit Branch form.
+
+Fields you can update:
+- **Branch Name** (required)
+- **Email**
+- **Country** (with flag selector)
+- **City**
+- **Phone** (with country code selector)
+- **TRN** — your Tax Registration Number, printed on invoices
+- **Branch Images** — upload up to 4 photos to showcase the branch (shown on the card)
+
+Click **Update Branch** to save.
+
+<Callout type="info">
+The **Location ID** is shown at the top of the form but cannot be edited — it's a system-generated identifier.
+</Callout>
+
+<Callout type="warning">
+To add a new branch, contact NxCut support. Branch creation is managed at the account level and cannot be done directly from this page.
+</Callout>
+
+---
+
+## Calendar
+
+**Settings → Calendar**
+
+This is where you set your salon's **Global Working Hours** — the default opening and closing times that appear on the Calendar for all staff.
+
+The hours are configured per location. You'll see "Configuring for: [location name]" at the top so you always know which branch you're editing.
+
+### Setting your hours
+
+For each day of the week (Sunday through Saturday), you can:
+- Set a **Start Time** and **End Time**
+- Tick the **Closed** checkbox if the salon is closed that day — it will be hidden from the Calendar entirely
+- Click **Default** on any day to reset it to the default hours
+
+Default hours are **08:00 AM – 11:45 PM**.
+
+Once you've made your changes, click **Save Global Hours**. To reset all days back to the defaults at once, click **Reset to Default**.
+
+<Callout type="warning">
+The end time must always be later than the start time. Invalid entries will not be saved.
+</Callout>
+
+---
+
+## Payment Methods
+
+**Settings → Payment Methods**
+
+This page shows all the payment options available at checkout. The default methods are: **Card**, **Cash**, **Membership**, **Online**, **Split Payment**, and **Voucher** — all active by default.
+
+Each method is shown as a card with its name, **Active** status badge, and the date it was created.
+
+### Adding a payment method
+
+Click **+ Add Payment Method**, enter a name, and save. The new method will immediately be available at checkout.
+
+### Editing or deleting a payment method
+
+Click the **···** (three dots) on any card to reveal two options:
+- **Edit** — rename the method or change its status
+- **Delete** (red) — permanently remove it
+
+<Callout type="warning">
+Deleting a payment method is permanent. If you just want to stop it appearing at checkout temporarily, edit it and set it to inactive instead.
+</Callout>
+
+---
+
+## Permissions
+
+**Settings → Permissions**
+
+Permissions let you control the rules around tips and discounts at checkout. Settings are per location — select the location you want to configure from the **Location** dropdown at the top.
+
+There are three permission settings:
+
+### Allow Voucher Usage for Tips
+**Toggle: Enable Voucher Tips**
+
+When turned on, clients can use a voucher as the payment method when adding a tip at checkout.
+
+*Off by default.*
+
+---
+
+### Accept Tips Online Only
+**Toggle: Disable Tips in POS**
+
+When turned on, the ability to add tips is completely removed from the POS checkout screen. Tips would only be accepted through online bookings.
+
+*Off by default.*
+
+---
+
+### Prevent Tips with Manual Discount
+**Toggle: Enforce Mutual Exclusivity**
+
+When turned on, a staff member cannot apply both a manual discount and a tip to the same sale. If a discount is applied, the tip option is disabled — and vice versa.
+
+*Off by default.*
